@@ -92,3 +92,31 @@ const robot = {
 // Here
 const {functionality} = robot; // Same as-> const functionality = robot.functionality; 
 functionality.beep();
+
+
+
+////// REACT
+//JSX className
+const myDiv = (
+  <div className="big">
+    I AM A BIG DIV
+  </div>
+)
+ReactDOM.render(myDiv, document.getElementById('app'))
+
+//self closing tags 
+//single tag elements should be  closed with '/'
+<img src="images/jenkins.png" />
+
+//js inside jsx 
+ReactDOM.render(
+  <h1>2 + 3</h1>, document.getElementById("app") //prints 2 + 3
+)
+
+ReactDOM.render(
+  <h1>{2 + 3}</h1>, document.getElementById("app") // prints 5
+) // here the curly braces is used to say its js inside jsx
+
+//Using js from outside the jsx
+const theBestString = 'tralalalala i am da best';
+ReactDOM.render(<h1>{theBestString}</h1>, document.getElementById('app'));
